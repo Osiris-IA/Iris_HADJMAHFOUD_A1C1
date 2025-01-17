@@ -1,0 +1,10 @@
+Propriété,Type ,Entité ,Commentaire,Identifiant 
+numeroSS,INT,enfant,UNIQUE,X
+nomENF,VARCHAR,enfant,,
+prenom,VARCHAR,enfant,,
+CodeEcole,VARCHAR,ecole,,X
+NomEC,VAARCHAR ,ecole,,
+Code Postal,INT,commune,,X
+nomC,VARCHAR,commune,,
+,,,,
+,,,,

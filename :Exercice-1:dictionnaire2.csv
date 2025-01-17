@@ -1,0 +1,30 @@
+Propriété,Type,Entité,Commentaire,Identifiant
+id,INT,authors,AUTO_INCREMENT,X
+firstname,VARCHAR,authors,,
+lastname,VARCHAR,authors,,
+country,VARCHAR,authors,,
+date_of_birth,DATE ,authors,,
+date_of_death,DATE,authors,,
+id,INT,edithors,,X
+name,VARCHAR,edithors,,
+id,INT,members,,X
+firstname,VARCHAR,members,,
+lastname,VARCHAR,members,,
+email,VARCHAR,members,UNIQUE,
+date_of_birth,DATE,members,,
+registered,BOOLEAN,members,DEFAULT FALSE ,
+id ,INT ,books,AUTO_INCREMENT,X
+title ,VARCHAR(255),books,,
+year ,INT,books,,
+author_id,INT,books,FOREIGN KEY,
+isbn ,VARCHAR(255) ,book_editions,,X
+book_id ,INT,book_editions,FOREIGN KEY,
+editor_id ,INT ,book_editions,FOREIGN KEY,
+publication_date ,DATE,book_editions,,
+id ,INT,loans,AUTO_INCREMENT ,X
+book_edition_isbn,VARCHAR(255) ,loans,FOREIGN KEY,
+member_id,INT ,loans,FOREIGN KEY,
+loan_date ,DATE ,loans,,
+return_date,DATE ,loans,,
+is_returned ,BOOLEAN ,loans,"DEFAULT FALSE,",
+,,,,
